@@ -81,7 +81,6 @@ venv\Scripts\activate     # On Windows
 # Install dependencies
 pip install -r requirements.txt
 
----
 
 ```
 ## 📊 Dataset
@@ -93,8 +92,33 @@ Test: 819 samples
 
 ---
 
-``
+
 ## 🛠️ Training the Model
 
 To start training, run:
 python app.py
+
+
+## 🔮 Results
+
+The model generates abstractive summaries such as:
+
+Input Dialogue:
+
+A: Hey, are you coming to the party tonight?
+B: Sorry, I have to work late.
+
+Generated Summary:
+B can't attend the party because of work.
+
+
+## 📦 Dependencies
+
+Python 3.8+
+Transformers
+Datasets
+Torch
+PyYAML
+
+Install all with:
+pip install -r requirements.txt
