@@ -5,7 +5,19 @@ It trains and evaluates the model on the **SAMSum dataset** for dialogue summari
 
 ---
 
+## 🚀 Project Overview
+
+Problem Statement: Long documents or dialogues are difficult to digest. Summarization helps compress them while preserving meaning.
+Solution: Fine-tune the Google Pegasus model on the SAMSum dataset (dialogue summarization dataset).
+
+Key Features:
+Preprocessing and cleaning text data.
+Training Pegasus with a custom pipeline.
+Evaluating the model with ROUGE metrics.
+Running inference to summarize new text.
+
 ## 🚀 Features
+Modular and reusable code structure
 - Uses **Pegasus model** for abstractive summarization
 - **Data ingestion & preprocessing** handled via configuration-driven pipeline
 - **Trainer API (Hugging Face)** for training & evaluation
