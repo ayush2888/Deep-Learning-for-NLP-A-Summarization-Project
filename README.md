@@ -15,6 +15,8 @@ It trains and evaluates the model on the **SAMSum dataset** for dialogue summari
 ---
 
 ## 📂 Project Structure
+
+```
 .
 ├── artifacts/                 # Saved models, checkpoints, and logs
 │   ├── data_ingestion/        # Downloaded raw dataset
@@ -60,6 +62,8 @@ It trains and evaluates the model on the **SAMSum dataset** for dialogue summari
 ├── requirements.txt           # Dependencies
 ├── README.md                  # Project documentation
 └── venv/                      # Virtual environment
+```
+
 
 ---
 
