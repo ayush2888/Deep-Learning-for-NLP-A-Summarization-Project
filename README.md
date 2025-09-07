@@ -84,9 +84,12 @@ pip install -r requirements.txt
 ## 📊 Dataset
 
 We use the Samsum dataset (Dialogue Summarization):
-
 Train: 14,732 samples
 Validation: 818 samples
 Test: 819 samples
 
 
+🛠️ Training the Model
+
+To start training, run:
+python app.py
