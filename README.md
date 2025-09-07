@@ -15,22 +15,51 @@ It trains and evaluates the model on the **SAMSum dataset** for dialogue summari
 ---
 
 ## 📂 Project Structure
-├── artifacts/ # Saved models, checkpoints, and logs
-├── config/ # YAML configuration files
-├── research/ # Jupyter/Colab notebooks for experimentation
-├── src/ # Source code
-│ ├── textSummarizer/
-│ │ ├── components/ # Model trainer, data ingestion, data processing
-│ │ ├── config/ # Configuration manager
-│ │ ├── constants/ # Constants file
-│ │ ├── entity/ # Entity classes for configs
-│ │ ├── logging/ # Logging utility
-│ │ ├── pipeline/ # Training and prediction pipelines
-│ │ └── utils/ # Common utility functions
-├── venv/ # Virtual environment
-├── app.py # Entry point for running pipeline
-├── requirements.txt # Dependencies
-└── README.md # Project documentation
+.
+├── artifacts/                 # Saved models, checkpoints, and logs
+│   ├── data_ingestion/        # Downloaded raw dataset
+│   ├── data_transformation/   # Processed/tokenized dataset
+│   ├── model_trainer/         # Trained models and metrics
+│   └── model_evaluation/      # Evaluation results (ROUGE scores, etc.)
+│
+├── config/                    # Configuration files (YAML)
+│   └── config.yaml
+│
+├── research/                  # Jupyter notebooks for experiments
+│   └── experiment.ipynb
+│
+├── src/
+│   └── textSummarizer/
+│       ├── components/        # Core modules
+│       │   ├── data_ingestion.py
+│       │   ├── data_transformation.py
+│       │   ├── model_trainer.py
+│       │   └── model_evaluation.py
+│       │
+│       ├── config/            # Configuration manager
+│       │   └── configuration.py
+│       │
+│       ├── constants/         # Constants used in the project
+│       │   └── __init__.py
+│       │
+│       ├── entity/            # Entity classes for configs
+│       │   └── config_entity.py
+│       │
+│       ├── logging/           # Logging setup
+│       │   └── logger.py
+│       │
+│       ├── pipeline/          # Pipelines for training, evaluation, prediction
+│       │   ├── training_pipeline.py
+│       │   ├── evaluation_pipeline.py
+│       │   └── prediction_pipeline.py
+│       │
+│       └── utils/             # Utility functions
+│           └── common.py
+│
+├── app.py                     # Entry point to run pipelines
+├── requirements.txt           # Dependencies
+├── README.md                  # Project documentation
+└── venv/                      # Virtual environment
 
 ---
 
